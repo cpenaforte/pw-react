@@ -1,0 +1,55 @@
+#contact {
+  padding: 0;
+  margin:0;
+  height: auto;
+  padding-bottom: 30px;
+  background: linear-gradient(-45deg, rgb(0,100,100),rgb(0, 150, 150),rgb(0, 200, 175),rgb(0,255,200));
+  background-size: 400% 400%;
+  display: flex;
+  border-radius: 5px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: backgroundTransition 8s ease-in-out infinite ;
+}
+h4 {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: white;
+  font-size: 2em;
+}
+.social-media{
+  margin-top: 1rem;
+  display: flex;
+}
+.footer-button {
+  text-decoration: none;
+  color: white;
+  margin-left:1px;
+  margin-right:1px;
+  font-size: 1em;
+  padding: 1rem 4rem;
+  border: 1px solid white;
+  border-radius: 5px;
+  min-width: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .35s cubic-bezier(0.55,0.025,0.075,0.01);
+}
+.footer-button:hover {
+  color: rgb(0, 200, 175);
+  background-color: white;
+}
+
+@keyframes backgroundTransition {
+  0%{
+      background-position: 0% 80%;
+  }
+  50%{
+      background-position: 80% 100%;
+  }
+  100%{
+      background-position: 0% 80%;
+  }
+}
